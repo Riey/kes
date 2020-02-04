@@ -151,7 +151,7 @@ $점수 > 70 {
 ```
 선택(<expr>) {
     (
-        (int|str) <block>
+        (int|str|그외) <block>
     )+
 }
 ```
