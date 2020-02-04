@@ -216,6 +216,6 @@ $점수 > 70 {
 `<expr><binary-op><expr>`
 
 
-### Conditional op expr
+## Conditional op expr
 
 `<expr> ? <expr> # <expr>`
