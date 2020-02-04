@@ -36,28 +36,30 @@
 
 `^`
 
-### Not
+## Conditional op
+
+## Not
 
 `!`
 
 ## Less
 
-'<'
+`<`
 
 ## Greater
 
-'>'
+`>`
 
 ## Less or Equal
 
-'<='
+`<=`
 
 ## Greater of Equal
 
-'>='
+`>=`
 
 
-## Assign
+## Assign op
 
 ### Simple assign
 
@@ -78,7 +80,7 @@ $1 += 3 // shortcut for $1 = $1 + 3 if $1 not exists it will error
 
 *always* have `$` prefix
 
-identifier = (_ + 0-9 + 한글)+
+identifier = \[0-9ㄱ-ㅎㅏ-ㅣ가-힣_\]+
 
 # Types
 
