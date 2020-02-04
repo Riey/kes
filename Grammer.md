@@ -2,8 +2,6 @@
 
 - `선택`
 - `그외`
-- `true`
-- `false`
 
 
 # Operators
@@ -42,6 +40,22 @@
 
 `!`
 
+## Less
+
+'<'
+
+## Greater
+
+'>'
+
+## Less or Equal
+
+'<='
+
+## Greater of Equal
+
+'>='
+
 
 ## Assign
 
@@ -70,6 +84,12 @@ identifier = (_ + 0-9 + 한글)+
 
 - int
 - str
+
+boolean expression is converted 1 or 0
+
+empty str is false other strs are true
+
+0 int is false other ints are true
 
 
 # Statement
@@ -123,7 +143,7 @@ $점수 > 70 {
     $등급 = "C"
 }
 
-'등급: {}', 등급
+'등급: {}', $등급
 ```
 
 ### SELECTCASE
@@ -141,19 +161,19 @@ $점수 > 70 {
 ### PRINTFORM
 
 ```
-`FORMED STRING`((, form arguments)+?)
+`FORMED STRING`((, <expr>)+?)
 ```
 
 ### PRINTFORML
 
 ```
-"FORMED STRING"((, form arguments)+?)
+"FORMED STRING"((, <expr>)+?)
 ```
 
 ### PRINTFORMW
 
 ```
-'FORMED STRING'((, form arguments)+?)
+'FORMED STRING'((, <expr>)+?)
 ```
 
 
@@ -175,7 +195,7 @@ $점수 > 70 {
 
 ## Builtin function
 
-`<ident>((arg,)*)`
+`<ident>((<expr>,)*)`
 
 ## Builtin variable
 
