@@ -188,7 +188,7 @@ $점수 > 70 {
 
 ### Int literal
 
-`(-)?\d+`
+`\d+`
 
 ### Str literal
 
