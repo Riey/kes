@@ -166,19 +166,19 @@ $점수 > 70 {
 ### PRINTFORM
 
 ```
-`FORMED STRING`((, <expr>)+?)
+'FORMED STRING'((, <expr>)+?)
 ```
 
 ### PRINTFORML
 
 ```
-"FORMED STRING"((, <expr>)+?)
+'FORMED STRING'L((, <expr>)+?)
 ```
 
 ### PRINTFORMW
 
 ```
-'FORMED STRING'((, <expr>)+?)
+'FORMED STRING'W((, <expr>)+?)
 ```
 
 
@@ -192,11 +192,7 @@ $점수 > 70 {
 
 ### Str literal
 
-`"[^"]*"`
-
-#### Escape
-
-`\`
+`'[^']*'`
 
 ## Builtin function
 
