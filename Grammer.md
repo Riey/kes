@@ -121,28 +121,28 @@ empty str is false other strs are true
 
 ### ELSEIF
 
-`<blockend_from_prev_branch> <expr> <block>`
+`그외 <expr> <block>`
 
 ```
 $수 = 3
 
 $수 % 2 == 0 {
     '짝수입니다'
-} $수 > 30 {
+} 그외 $수 > 30 {
     '홀수입니다'
 }
 ```
 
 ### ELSE
 
-`<blockend_from_prev_branch>  그외 <block>`
+`그외 <block>`
 
 ```
 $점수 = 50
 
 $점수 > 70 {
     $등급 = "A"
-} $점수 > 50 {
+} 혹은 $점수 > 50 {
     $등급 = "B"
 } 그외 {
     $등급 = "C"
