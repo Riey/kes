@@ -87,6 +87,10 @@ $1 = 0
 $1 += 3 // shortcut for $1 = $1 + 3 if $1 not exists it will error
 ```
 
+# Builtin value
+
+identifier = \[ㄱ-ㅎㅏ-ㅣ가-힣_]\[0-9ㄱ-ㅎㅏ-ㅣ가-힣_\]*
+
 # Variable
 
 *always* have `$` prefix
@@ -204,11 +208,11 @@ $점수 > 70 {
 
 ## Builtin function
 
-`@<ident>((<expr>,)*)`
+`<ident>((<expr>,)*)`
 
 ## Builtin variable
 
-`@<ident>`
+`<ident>`
 
 ## Variable expr
 
