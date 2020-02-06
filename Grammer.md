@@ -180,7 +180,7 @@ $점수 > 70 {
 ### PRINTFORML
 
 ```
-'FORMED STRING'@((, <expr>)+?)
+'FORMED STRING'$((, <expr>)+?)
 ```
 
 ### PRINTFORMW
@@ -204,11 +204,11 @@ $점수 > 70 {
 
 ## Builtin function
 
-`<ident>((<expr>,)*)`
+`@<ident>((<expr>,)*)`
 
 ## Builtin variable
 
-`<ident>`
+`@<ident>`
 
 ## Variable expr
 
