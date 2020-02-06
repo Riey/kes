@@ -172,13 +172,13 @@ $점수 > 70 {
 ### PRINTFORML
 
 ```
-'FORMED STRING'L((, <expr>)+?)
+'FORMED STRING'@((, <expr>)+?)
 ```
 
 ### PRINTFORMW
 
 ```
-'FORMED STRING'W((, <expr>)+?)
+'FORMED STRING'#((, <expr>)+?)
 ```
 
 
