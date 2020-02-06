@@ -218,10 +218,6 @@ $점수 > 70 {
 
 `<variable>`
 
-## Unary op expr
-
-`<unary-op><expr>`
-
 ## Binart op expr
 
 `<expr><binary-op><expr>`
