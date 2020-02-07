@@ -48,7 +48,7 @@
 
 ## Not
 
-`!`
+`~`
 
 ## Equal
 
@@ -56,7 +56,7 @@
 
 ## Not Equal
 
-`!=`
+`<>`
 
 ## Less
 
@@ -70,7 +70,7 @@
 
 `<=`
 
-## Greater of Equal
+## Greater or Equal
 
 `>=`
 
@@ -89,7 +89,7 @@
 ```
 $1 = 0
 
-$1 += 3 ; shortcut for $1 = $1 3 + if $1 not exists it will error
+$1 += 3 ; [$1 = $1 3 +]의 축약표현 $1가 존재하지 않으면 에러가 일어남 
 ```
 
 # Builtin value
@@ -98,7 +98,7 @@ identifier = \[ㄱ-ㅎㅏ-ㅣ가-힣_]\[0-9ㄱ-ㅎㅏ-ㅣ가-힣_\]*
 
 # Variable
 
-*always* have `$` prefix
+*항상* `$`가 앞에옴
 
 identifier = \[0-9ㄱ-ㅎㅏ-ㅣ가-힣_\]+
 
