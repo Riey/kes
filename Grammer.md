@@ -89,7 +89,7 @@
 ```
 $1 = 0
 
-$1 += 3 // shortcut for $1 = $1 3 + if $1 not exists it will error
+$1 += 3 ; shortcut for $1 = $1 3 + if $1 not exists it will error
 ```
 
 # Builtin value
