@@ -1,6 +1,6 @@
 # Stack oriented
 
-모든 표현식은 후위표현식이고 
+모든 표현식은 후위표현식입니다
 
 
 # Keywords
