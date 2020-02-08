@@ -46,51 +46,39 @@
 
 ## Boolean op
 
-## Not
+### Not
 
 `~`
 
-## Equal
+### Equal
 
 `==`
 
-## Not Equal
+### Not Equal
 
 `<>`
 
-## Less
+### Less
 
 `<`
 
-## Greater
+### Greater
 
 `>`
 
-## Less or Equal
+### Less or Equal
 
 `<=`
 
-## Greater or Equal
+### Greater or Equal
 
 `>=`
 
 
 ## Assign op
 
-### Simple assign
+`->`
 
-`=`
-
-### Combined assign
-
-`<simple operator>=`
-
-
-```
-$1 = 0
-
-$1 += 3 ; [$1 = $1 3 +]의 축약표현 $1가 존재하지 않으면 에러가 일어남 
-```
 
 # Builtin value
 
@@ -124,12 +112,15 @@ identifier = \[0-9ㄱ-ㅎㅏ-ㅣ가-힣_\]+
 
 # Statement
 
-## Variable
+## Store Variable
 
-### Assign, Create
+스택에서 맨위의 값을 뽑아서 변수에 저장합니다
+
+`<expr> -> <variable>`
 
 ```
-<variable> = <expr>
+1 2 + -> $0
+; $0 = 3
 ```
 
 ## Branch
@@ -149,7 +140,7 @@ identifier = \[0-9ㄱ-ㅎㅏ-ㅣ가-힣_\]+
 `그외 <expr> <block>`
 
 ```
-$수 = 3
+3 -> $수
 
 $수 2 % 0 == {
     '짝수입니다'
@@ -163,17 +154,21 @@ $수 2 % 0 == {
 `그외 <block>`
 
 ```
-$점수 = 50
+50 -> $점수
 
 $점수 70 > {
-    $등급 = "A"
+    "A"
 } 그외 $점수 50 > {
-    $등급 = "B"
+    "B"
 } 그외 {
-    $등급 = "C"
+    "C"
 }
 
-'등급: ' $등급 ''$
+-> $등급
+
+'등급: ' $등급 ''
+
+;출력: '등급: C'
 ```
 
 ### SELECTCASE
