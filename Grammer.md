@@ -1,6 +1,6 @@
 # Stack oriented
 
-모든 표현식은 후위표현식입니다
+모든 표현식은 후위표현식이고 
 
 
 # Keywords
@@ -44,7 +44,7 @@
 
 `^`
 
-## Conditional op
+## Boolean op
 
 ## Not
 
@@ -221,12 +221,12 @@ $점수 70 > {
 
 ## Builtin function
 
-`(<expr>)*<ident>`
+`(<argument>)*<ident>`
 
 ## Variable expr
 
 `<variable>`
 
-## Binart op expr
+## Operator
 
-`<expr><expr><binary-op>`
+`(<operand>)+<op>`
