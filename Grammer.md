@@ -95,13 +95,13 @@
 
 # Builtin value
 
-identifier = \[ㄱ-ㅎㅏ-ㅣ가-힣_]\[0-9ㄱ-ㅎㅏ-ㅣ가-힣_\]*
+identifier = \[a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_]\[0-9a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_\]*
 
 # Variable
 
 *항상* `$`가 앞에옴
 
-identifier = \[0-9ㄱ-ㅎㅏ-ㅣ가-힣_\]+
+identifier = \[0-9a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_\]+
 
 
 # Types
