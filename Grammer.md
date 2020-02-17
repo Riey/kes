@@ -234,7 +234,7 @@ $점수 70 > {
 반복 <expr> <block>
 ```
 
-\<expr>이 참인 동안 <block>을 계속 실행합니다
+\<expr>이 참인 동안 \<block>을 계속 실행합니다
 
 
 ## Print
