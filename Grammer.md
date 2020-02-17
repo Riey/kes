@@ -1,6 +1,6 @@
 # Stack oriented
 
-모든 표현식은 후위표현식입니다
+모든 표현식은 [후위표현식](https://ko.wikipedia.org/wiki/%EC%97%AD%ED%8F%B4%EB%9E%80%EB%93%9C_%ED%91%9C%EA%B8%B0%EB%B2%95)입니다
 
 
 # Keywords
