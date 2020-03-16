@@ -280,7 +280,9 @@ identifier = \[0-9a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_\]+
 
 ## Builtin function
 
-`<ident>((<argument>)*)`
+`<ident> { (<argument>)* }`
+
+리턴값은 있을수도 있고 없을수도 있음
 
 ## Variable expr
 
