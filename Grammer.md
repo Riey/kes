@@ -10,6 +10,7 @@
 - `그외`
 - `종료`
 - `반복`
+- `호출`
 
 # Comment
 
@@ -280,9 +281,11 @@ identifier = \[0-9a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_\]+
 
 ## Builtin function
 
-`<ident> { (<argument>)* }`
+`호출 <ident> { (<argument>)* }`
 
-리턴값은 있을수도 있고 없을수도 있음
+블록 안에서 생성된 모든 값이 매개변수가 됩니다
+
+리턴값은 있을수도 있고 없을수도 있습니다
 
 ## Variable expr
 
