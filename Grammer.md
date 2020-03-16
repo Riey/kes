@@ -100,14 +100,6 @@
 
 identifier = \[a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_]\[0-9a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_\]*
 
-# Builtin block
-
-```
-<identifier> {
-    (<expr>)*
-}
-```
-
 # Variable
 
 *항상* `$`가 앞에옴
@@ -288,7 +280,7 @@ identifier = \[0-9a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_\]+
 
 ## Builtin function
 
-`(<argument>)*<ident>`
+`<ident>((<argument>)*)`
 
 ## Variable expr
 
