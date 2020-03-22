@@ -198,7 +198,7 @@ identifier = \[0-9a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_\]+
         (int|str) (| (int|str))* <block>
     )*
     (
-        그외       <block>
+        _       <block>
     )?
 }
 ```
@@ -212,7 +212,7 @@ identifier = \[0-9a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_\]+
     5 | 6 {
         7:
     }
-    그외 {
+    _ {
         8:
     }
 }
