@@ -195,7 +195,7 @@ identifier = \[0-9a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_\]+
 ```
 선택 <expr> {
     (
-        (int|str) (, (int|str))* <block>
+        (int|str) (| (int|str))* <block>
     )*
     (
         _       <block>
@@ -206,10 +206,10 @@ identifier = \[0-9a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_\]+
 예시
 ```kes
 선택 5 {
-    1, 2, 3 {
+    1 | 2 | 3 {
         4:
     }
-    5, 6 {
+    5 | 6 {
         7:
     }
     _ {
