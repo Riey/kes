@@ -11,7 +11,6 @@
 - `그외`
 - `종료`
 - `반복`
-- `호출`
 
 # Comment
 
@@ -271,7 +270,7 @@ identifier = \[0-9a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_\]+
 
 ## Builtin function
 
-`호출 <ident> { (<argument>)* }`
+`!<ident> { (<argument>)* }`
 
 블록 안에서 생성된 모든 값이 매개변수가 됩니다
 
