@@ -287,4 +287,4 @@ identifier = \[0-9a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_\]+
 
 ## Operator
 
-`(<operand>)+<op>`
+`(<operand>+)<op>`
