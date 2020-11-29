@@ -1,0 +1,22 @@
+num = { ASCII_DIGIT+ }
+str = ${ "\"" ~ str_inner ~ "\"" }
+	str_inner = @{ char* }
+	char = { !("\"" | "\\") ~ ANY }
+ident = @{ (ASCII_ALPHA | op_char) ~ (ASCII_ALPHANUMERIC | op_char | "_")* }
+	op_char = { "+" | "-" | "*" | "/" | "!" | "@" | "#" | "%" | "^" | "&" | "<" | ">" | "=" }
+call = { "(" ~ ident ~ expr* ~ ")" }
+nil = { "nil" }
+list = { "(" ~ expr* ~ ")" }
+
+expr = {
+	num |
+    str |
+    nil |
+    ident |
+    call |
+    list
+}
+
+program = _{ SOI ~ WHITESPACE? ~ (expr ~ WHITESPACE?)* ~ EOI }
+
+WHITESPACE = _{ " " | "\t" | "\n" }
